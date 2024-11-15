@@ -3,5 +3,8 @@
   "blanks-around-fences": false,
   "no-inline-html": {
     "allowed_elements": ["kbd", "sub"]
+  },
+  "MD013": {
+    "line_length": 120
   }
 }
