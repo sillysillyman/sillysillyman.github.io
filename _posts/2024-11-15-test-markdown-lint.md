@@ -8,11 +8,12 @@ tags:
 - Markdown
 ---
 
-# Test Markdown File
+## Test Markdown File
 
 This is a temporary file to test GitHub Actions workflow.
 
-## Features to test:
+## Features to test
+
 * Markdown syntax
 * Line length
 * HTML tags
