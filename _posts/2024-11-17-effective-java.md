@@ -1,6 +1,6 @@
 ---
 title: Effective Java는 꼭 읽어보세요
-date: 2024-11-18 03:08:00
+date: 2024-11-17 00:00:00
 categories:
 - Effective Java
 tags:
