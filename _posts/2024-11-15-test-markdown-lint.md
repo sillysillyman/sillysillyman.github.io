@@ -1,11 +1,8 @@
 ---
 title: Test Markdown Lint
 date: 2024-11-15 12:00:00
-categories:
-- Test
-tags:
-- GitHub Actions
-- Markdown
+categories: [Test]
+tags: [GitHub Actions, Markdown]
 ---
 
 ## Test Markdown File

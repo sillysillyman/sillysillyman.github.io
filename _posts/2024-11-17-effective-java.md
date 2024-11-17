@@ -1,12 +1,8 @@
 ---
 title: Effective Java는 꼭 읽어보세요
 date: 2024-11-17 00:00:00
-categories:
-- Effective Java
-tags:
-- Java
-- Effective Java
-- 개발 도서
+categories: [Effective Java]
+tags: [Java, Effective Java, 개발 도서]
 ---
 
 > **"Effective Java는 꼭 읽어보세요"**
