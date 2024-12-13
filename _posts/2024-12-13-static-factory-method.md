@@ -15,6 +15,7 @@ Java에서는 전통적으로 생성자(Constructor)를 통해 객체를 생성�
 
 먼저 생성자에 대해 알아보자. 생성자는 객체가 생성될 때 초기화를 담당하는 특별한 메서드이다.
 특징으로는 아래와 같다:
+
 - 클래스명과 메서드명이 일치
 - 리턴 타입이 없음
 - `new` 키워드를 통해 호출됨
@@ -221,7 +222,8 @@ Payment bankPayment = Payment.createBankTransferPayment(
 객체 생성을 캡슐화하여 생성 과정에서의 유효성 검사나 초기화 로직을 숨길 수 있다
 결제 수단에 따른 적절한 초기 상태 설정이 보장된다
 
-위 예시에서 createCardPayment와 createBankTransferPayment라는 이름을 통해 객체 생성의 의도가 명확히 드러나며, 각 결제 수단에 맞는 적절한 상태(PENDING, WAITING_FOR_DEPOSIT)가 자동으로 설정된다.
+위 예시에서 createCardPayment와 createBankTransferPayment라는 이름을 통해 객체 생성의 의도가 명확히 드러나며,
+각 결제 수단에 맞는 적절한 상태(PENDING, WAITING_FOR_DEPOSIT)가 자동으로 설정된다.
 
 <!-- ## 정적 팩터리 메서드의 장점
 
@@ -243,7 +245,7 @@ Payment bankPayment = Payment.createBankTransferPayment(
 - `of`: 여러 매개변수를 받아 적합한 타입의 인스턴스를 반환하는 집계 메서드
   - e.g. `Set<Rank> faceCards = EnumSet.of(JACK, QUEEN, KING);`
 - `valueOf`: `from`과 `of`의 더 자세한 버전
-  - e.g. `BigInteger prime = BigInteger.valueOf(Integer.MAX_VALUE);` 
+  - e.g. `BigInteger prime = BigInteger.valueOf(Integer.MAX_VALUE);`
 - `instance` 혹은 `getInstance`: (매개변수를 받는다면) 매개변수로 명시한 인스턴스를 반환하지만, 같은 인스턴스임을 보장하지는 않는다.
   - e.g. `StackWalker luke = StackWalker.getInstance(options);`
 - `create` 혹은 `newInstance`: `instance` 혹은 `getInstance`와 같지만, 매번 새로운 인스턴스를 생성해 반환함을 보장한다.
@@ -254,5 +256,3 @@ Payment bankPayment = Payment.createBankTransferPayment(
   - e.g. `BufferedReader br = Files.newBufferedReader(path);`
 - `type`: `getType`과 `newType`의 간결한 버전
   - e.g. `List<Complaint> litany = Collections.list(legacyLitany);`
-
----
