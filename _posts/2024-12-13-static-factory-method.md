@@ -1,10 +1,8 @@
 ---
 title: 생성자 대신 정적 팩터리 메서드를 사용하라
 date: 2024-12-12 00:00:00
-categories:
-- Effective Java
-tags:
-- Effective Java
+categories: [Effective Java]
+tags: [Effective Java, Java]
 ---
 
 OOP에서 객체를 생성하는 방법은 매우 중요하다. 가장 기본적인 객체 생성 방식은 생성자를 호출하는 것이다.
