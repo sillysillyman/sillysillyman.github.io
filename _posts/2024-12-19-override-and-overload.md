@@ -10,7 +10,7 @@ tags: [CS, Java]
 
 > In programming language theory and type theory,
 > polymorphism is the use of a single symbol to represent multiple different types.
-> 
+>
 > _번역: 프로그래밍 언어 이론과 타입 이론에서, 다형성이란 다른 여러 타입을 나타내기 위해 하나의 기호를 사용하는 것이다._
 
 쉽게 말하자면, 하나의 이름이 여러가지 형태로 사용될 수 있다는 것이다. 정의만 보고는 이해하기 어려울 수 있으나 확실한 것은 우리는 이미 이 개념을 잘 사용하고 있다는 것이다.
