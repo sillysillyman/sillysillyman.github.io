@@ -2,7 +2,7 @@
   "commands-show-output": false,
   "blanks-around-fences": false,
   "no-inline-html": {
-    "allowed_elements": ["kbd", "sub", "u"]
+    "allowed_elements": ["kbd", "sub", "sup", "u"]
   },
   "MD013": {
     "line_length": 120
