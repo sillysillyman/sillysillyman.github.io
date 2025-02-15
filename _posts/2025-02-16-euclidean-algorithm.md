@@ -6,8 +6,6 @@ tags: [Algorithm, Math, Number Theory]
 math: true
 ---
 
-## 유클리드 호제법이란?
-
 > In mathematics, the **Euclidean algorithm**, or **Euclid's algorithm**,
 > is an efficient method for computing the greatest common divisor (GCD) of two integers,
 > the largest number that divides them both without a remainder.
@@ -36,4 +34,4 @@ int gcd(int a, int b) {
 
 `gcd` 함수가 재귀적으로 호출되면서 두번째 파라미터인 `b`가 `0`이 될 때의 `a`값이 원래 두 수의 최대공약수이다.
 
-혹은 간단히, 표준 라이브러리에서 `std::gcd` 함수를 제공하므로 직접 구현하지 않고도 `<numeric>` 헤더를 추가하여 사용할 수도 있다.
+혹은 간단히, 표준 라이브러리에서 `std::gcd` 함수를 제공하므로 직접 구현하지 않고도 `<numeric>` 헤더를 추가하여 사용할 수 있다.
