@@ -274,8 +274,8 @@ System.out.println("count: " + counter.getCount()); // count: 1
 
 #### **직렬화 자동 처리**
 
-**직렬화(Serialization)** 란 자바 객체를 바이트 스트림으로 변환하여 파일로 저장하거나 네트워크로 전송할 수 있게 하는 메커니즘이다.
-반대로 **역직렬화(Deserialization)** 는 바이트 스트림을 다시 자바 객체로 복원하는 과정이다.
+**직렬화(Serialization)**란 자바 객체를 바이트 스트림으로 변환하여 파일로 저장하거나 네트워크로 전송할 수 있게 하는 메커니즘이다.
+반대로 **역직렬화(Deserialization)**는 바이트 스트림을 다시 자바 객체로 복원하는 과정이다.
 
 싱글턴에서 직렬화는 매우 중요한 문제인데, 기본적으로 <u>역직렬화는 항상 새로운 인스턴스를 생성</u>하기 때문이다.
 그래서 싱글턴 패턴이 깨질 위험이 있다.
@@ -292,7 +292,7 @@ public class Counter implements Serializable {
 
     ...
 
-    // 역직렬화 시 호출되는 메서드
+    // 역직렬화 시 호출되는 메서드, 새로운 인스턴스 생성 없이 기존 인스턴스 반환
     private Object readResolve() { return INSTANCE; }
 }
 ```
