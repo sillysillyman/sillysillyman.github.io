@@ -133,7 +133,7 @@ ExtendedUtilityClass extendedUtilityClass = new ExtendedUtilityClass(); // 인�
 
 ### **`abstract` + `final` 키워드?**
 
-> 그렇다면 `final` 키워드를 사용하여 상속을 방지하는 것은 어떨까?
+> 그렇다면 `final` 한정자를 사용하여 상속을 방지하는 것은 어떨까?
 
 클래스를 `final`로 선언하면 다른 클래스가 상속할 수 없게 된다.
 
@@ -146,7 +146,7 @@ ExtendedUtilityClass extendedUtilityClass = new ExtendedUtilityClass(); // 인�
 
 > 추상 클래스의 본래 목적은 **상속(Inheritance)**이다.
 
-여기에 `final` 키워드를 사용하여 상속을 방지한다는 것은 언어의 설계와 맞지 않는 모순되는 행위이다.
+여기에 `final` 한정자를 사용하여 상속을 방지한다는 것은 언어의 설계와 맞지 않는 모순되는 행위이다.
 
 > 당연히 Java에서는 `abstract`와 `final`의 혼용이 문법적으로 금지된다.
 >
@@ -164,7 +164,7 @@ ExtendedUtilityClass extendedUtilityClass = new ExtendedUtilityClass(); // 인�
 
 `abstract`나 `final` 같이 Java가 제공하는 키워드로 간편하게 해결하는 방법은 애초에 없다.
 
-## **`private` 생성자**
+## **private 생성자**
 
 이 문제를 해결하는 가장 효과적인 방법은 `private` 생성자를 추가하는 것이다.
 생성자를 `private`으로 선언하면 <u>클래스 외부에서는 접근할 수 없으므로 인스턴스화를 방지</u>할 수 있다.
