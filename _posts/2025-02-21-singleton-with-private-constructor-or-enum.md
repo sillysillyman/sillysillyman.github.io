@@ -361,7 +361,7 @@ java.lang.IllegalArgumentException: Cannot reflectively create enum objects
 ...
 ```
 
-## **결론**
+## **결론: 적절한 싱글턴 구현 방식의 선택과 활용**
 
 세 가지 방식 모두 싱글턴을 구현할 수 있지만, 특별한 이유가 없다면 열거 타입 방식을 사용하는 것이 가장 좋다.
 코드가 간결하고, 직렬화와 리플렉션 공격에 대한 방어가 자동으로 처리되기 때문이다.

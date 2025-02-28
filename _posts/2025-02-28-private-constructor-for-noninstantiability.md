@@ -191,7 +191,7 @@ UtilityClass utilityClass = new UtilityClass();
 java: UtilityClass() has private access in UtilityClass
 ```
 
-## **결론**
+## **결론: 인스턴스화 방지를 위한 private 생성자 패턴의 효과**
 
 `private` 생성자를 가진 클래스는 상속이 불가능하다.
 모든 생성자는 명시적이든 암묵적이든 상위 클래스의 생성자를 호출해야 하는데, 상위 클래스의 생성자가 `private`이면 하위 클래스에서 접근할 수 없기 때문이다.
