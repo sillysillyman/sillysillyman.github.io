@@ -23,8 +23,6 @@ package-lock.json
 !.vscode/tasks.json
 
 # Misc
-<<<<<<< HEAD
-=======
 _sass/vendors
 assets/js/dist
->>>>>>> upstream/master
+.DS_Store
