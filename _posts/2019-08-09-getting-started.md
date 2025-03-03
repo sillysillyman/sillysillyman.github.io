@@ -25,7 +25,8 @@ This approach simplifies upgrades, isolates unnecessary files, and is perfect fo
 
 ### Option 2. Forking the Theme
 
-This approach is convenient for modifying features or UI design, but presents challenges during upgrades. So don't try this unless you are familiar with Jekyll and plan to heavily modify this theme.
+This approach is convenient for modifying features or UI design, but presents challenges during upgrades.
+So don't try this unless you are familiar with Jekyll and plan to heavily modify this theme.
 
 1. Sign in to GitHub.
 2. [Fork the theme repository](https://github.com/cotes2020/jekyll-theme-chirpy/fork).
@@ -37,7 +38,8 @@ Once your repository is created, it's time to set up your development environmen
 
 ### Using Dev Containers (Recommended for Windows)
 
-Dev Containers offer an isolated environment using Docker, which prevents conflicts with your system and ensures all dependencies are managed within the container.
+Dev Containers offer an isolated environment using Docker,
+which prevents conflicts with your system and ensures all dependencies are managed within the container.
 
 **Steps**:
 
@@ -87,21 +89,27 @@ Update the variables in `_config.yml`{: .filepath} as needed. Some typical optio
 
 ### Social Contact Options
 
-Social contact options are displayed at the bottom of the sidebar. You can enable or disable specific contacts in the `_data/contact.yml`{: .filepath} file.
+Social contact options are displayed at the bottom of the sidebar.
+You can enable or disable specific contacts in the `_data/contact.yml`{: .filepath} file.
 
 ### Customizing the Stylesheet
 
-To customize the stylesheet, copy the theme's `assets/css/jekyll-theme-chirpy.scss`{: .filepath} file to the same path in your Jekyll site, and add your custom styles at the end of the file.
+To customize the stylesheet, copy the theme's `assets/css/jekyll-theme-chirpy.scss`{: .filepath} file to the same path in your Jekyll site,
+and add your custom styles at the end of the file.
 
 ### Customizing Static Assets
 
-Static assets configuration was introduced in version `5.1.0`. The CDN of the static assets is defined in `_data/origin/cors.yml`{: .filepath }. You can replace some of them based on the network conditions in the region where your website is published.
+Static assets configuration was introduced in version `5.1.0`. The CDN of the static assets is defined in `_data/origin/cors.yml`{: .filepath }.
+You can replace some of them based on the network conditions in the region where your website is published.
 
 If you prefer to self-host the static assets, refer to the [_chirpy-static-assets_](https://github.com/cotes2020/chirpy-static-assets#readme) repository.
 
 ## Deployment
 
-Before deploying, check the `_config.yml`{: .filepath} file and ensure the `url` is configured correctly. If you prefer a [**project site**](https://help.github.com/en/github/working-with-github-pages/about-github-pages#types-of-github-pages-sites) and don't use a custom domain, or if you want to visit your website with a base URL on a web server other than **GitHub Pages**, remember to set the `baseurl` to your project name, starting with a slash, e.g., `/project-name`.
+Before deploying, check the `_config.yml`{: .filepath} file and ensure the `url` is configured correctly.
+If you prefer a [**project site**](https://help.github.com/en/github/working-with-github-pages/about-github-pages#types-of-github-pages-sites)
+and don't use a custom domain, or if you want to visit your website with a base URL on a web server other than **GitHub Pages**,
+remember to set the `baseurl` to your project name, starting with a slash, e.g., `/project-name`.
 
 Now you can choose _ONE_ of the following methods to deploy your Jekyll site.
 
@@ -110,7 +118,8 @@ Now you can choose _ONE_ of the following methods to deploy your Jekyll site.
 Prepare the following:
 
 - If you're on the GitHub Free plan, keep your site repository public.
-- If you have committed `Gemfile.lock`{: .filepath} to the repository, and your local machine is not running Linux, update the platform list of the lock file:
+- If you have committed `Gemfile.lock`{: .filepath} to the repository, and your local machine is not running Linux
+  update the platform list of the lock file:
 
   ```console
   $ bundle lock --add-platform x86_64-linux
@@ -118,11 +127,13 @@ Prepare the following:
 
 Next, configure the _Pages_ service:
 
-1. Go to your repository on GitHub. Select the _Settings_ tab, then click _Pages_ in the left navigation bar. In the **Source** section (under _Build and deployment_), select [**GitHub Actions**][pages-workflow-src] from the dropdown menu.  
+1. Go to your repository on GitHub. Select the _Settings_ tab, then click _Pages_ in the left navigation bar.
+   In the **Source** section (under _Build and deployment_), select [**GitHub Actions**][pages-workflow-src] from the dropdown menu.  
    ![Build source](pages-source-light.png){: .light .border .normal w='375' h='140' }
    ![Build source](pages-source-dark.png){: .dark .normal w='375' h='140' }
 
-2. Push any commits to GitHub to trigger the _Actions_ workflow. In the _Actions_ tab of your repository, you should see the workflow _Build and Deploy_ running. Once the build is complete and successful, the site will be deployed automatically.
+2. Push any commits to GitHub to trigger the _Actions_ workflow. In the _Actions_ tab of your repository,
+   you should see the workflow _Build and Deploy_ running. Once the build is complete and successful, the site will be deployed automatically.
 
 You can now visit the URL provided by GitHub to access your site.
 
@@ -136,7 +147,8 @@ Navigate to the root of the source project, and build your site with the followi
 $ JEKYLL_ENV=production bundle exec jekyll b
 ```
 
-Unless you specified the output path, the generated site files will be placed in the `_site`{: .filepath} folder of the project's root directory. Upload these files to your target server.
+Unless you specified the output path, the generated site files will be placed in the `_site`{: .filepath} folder of the project's root directory.
+Upload these files to your target server.
 
 [nodejs]: https://nodejs.org/
 [starter]: https://github.com/cotes2020/chirpy-starter
