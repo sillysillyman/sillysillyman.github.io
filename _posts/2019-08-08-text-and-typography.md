@@ -153,7 +153,7 @@ $$
 \end{equation}
 $$
 
-We can reference the equation as \eqref{eq:series}.
+We can reference the equation as $\eqref{eq:series}$.
 
 When $a \ne 0$, there are two solutions to $ax^2 + bx + c = 0$ and they are
 
